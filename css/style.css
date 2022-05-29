@@ -26,6 +26,9 @@ ul {
     text-decoration: none;
     font-weight: bolder;
 }
+.header__enlaces_de_navegacion:hover {
+    color: #ED6A5A;
+}
 .header__logo {
     justify-content: flex-start;
     align-items: center;
@@ -135,6 +138,20 @@ hr {
     margin-top: 42%;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.74);
+}
+.imagenes_servicios__box:hover > .imagenes_servicios__capa {
+    opacity: 1;
+    visibility: visible;
+    transition: 870ms;
+}
+.imagenes_servicios__box:hover > .imagenes_servicios__img {
+    width: 16vw;
+    transition: 870ms;
+}
+.imagenes_servicios__box:hover {
+    box-shadow: 0px 15px 25px;
+    cursor: pointer;
+    transition: all 870ms;
 }
 /* FIN DE SECCION IMAGENES DE MUESTRA EN EL INDEX*/
 /*QUIENES SOMOS*/
