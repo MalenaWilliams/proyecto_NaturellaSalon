@@ -37,7 +37,7 @@ ul {
                                  /* INDEX DE LA PAGINA*/
 .index {
     margin-top: 2%;
-    background-image: url(../img/natu.png);   background-position: top left; background-repeat: no-repeat;
+    background-image: url(../img/fondo_index.png);   background-position: top left; background-repeat: no-repeat;
 }
 .index__contenedor {
     display: flex;
@@ -180,7 +180,7 @@ hr {
     background-image: url(../img/ladrillos.png); margin:0%;
 }
 .sucursales__banner {
-    background-image: url(../img/azu.jpeg); background-position: center; margin-right: 0%;
+    background-image: url(../img/banner_sucursales.jpg); background-position: center; margin-right: 0%;
     height: 18.75em;
     display: flex;
     flex-direction: column;
@@ -316,7 +316,7 @@ hr {
                                  /* FIN SECCION SERVICIOS*/
                                  /* SECCION PROMOCIONES*/                                 
 .promociones__banner {
-    background-image: url(../img/artem-beliaikin-24VnofrmxWg-unsplash\ 1.png);  background-size: cover; background-position: center;
+    background-image: url(../img/banner_promociones.png);  background-size: cover; background-position: center;
     width: 98.95vw;
     height: 18.75em;
     display: flex;
@@ -542,7 +542,7 @@ hr {
 @media screen and (max-width: 1377px) {
 /*MEDIA QUERY 1377PX INDEX*/
     .index {
-        background-image: url(../img/fondo.png) 
+        background-image: url(../img/fondo_index2.png) 
     }
     .index__contenedor {
         flex-direction: column;  
@@ -720,7 +720,7 @@ hr {
     }
 /*MEDIA QUERY 1040PX SUCURSALES*/
     .sucursales__banner {
-        background-image: url(../img/azu\ 1.png); background-position: center; margin-right: 0%;
+        background-image: url(../img/banner_sucursales2.png); background-position: center; margin-right: 0%;
     }
     .sucursales__titulo {
         font-size: 4.45em;
@@ -909,7 +909,7 @@ hr {
     }
 /*MEDIA QUERY 660PX INDEX*/
     .index {
-        background-image: url(../img/Component\ 5.png);
+        background-image: url(../img/fondo_index3.png);
     }
     .index__titulo {
     font-size: 4em;
@@ -939,7 +939,7 @@ hr {
     }
 /*MEDIA QUERY 660PX SUCURSALES*/
     .sucursales__banner {
-        background-image: url(../img/azu2.png); background-position: center;
+        background-image: url(../img/banner_sucursales3.png); background-position: center;
     }
     .sucursales__titulo {
         margin-left: 4.6em;
