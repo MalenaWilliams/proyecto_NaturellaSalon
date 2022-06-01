@@ -5,30 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturella Salon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!--HEADER DE LA PAGINA-->
     <header class="header">
-        <img src="../img/Frame.svg" alt="" class="header__logo">
-        <nav class="enlaces__de__navegacion">
-            <ul class="header__lista_de_navegacion">
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="../index.html">INICIO</a>
-                </li> 
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./sucursales.html">SUCURSALES</a>
-                </li>
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./promociones.html">PROMOCIONES</a>
-                </li>
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+        <img src="../img/logo_naturella.jpg" alt="" class="header__logo">
+        <nav class="navbar navbar-expand-lg bg-light" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link " href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="../pages/sucursales.html">SUCURSALES</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/promociones.html">PROMOCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>    
         </nav>
     </header> 
     <!-- FIN DEL HEADER DE LA PAGINA-->
@@ -37,137 +46,121 @@
             <h1 class="sucursales__titulo">SUCURSALES</h1>
             <h2 class="sucursales__subtitulo">Lideres en salones de belleza.</h2>
         </div>
-        <section class="seccion_sucursales">
-            <article class="seccion_sucursales__direccion">
-                <h3 class="seccion_sucursales__titulo">NUEVA CORDOBA:</h3>
-                <ul>
-                    <li class="seccion_sucursales__info">
+        <h3 class="display-6">Visitanos en cualquiera de nuestras sucursales!</h3>
+        <div class="container">
+            <section class="row">
+                <article class="col">
+                    <h3 class="seccion_sucursales__titulo">CORDOBA:</h3>
+                    <ul>
+                        <li class="seccion_sucursales__info">
                         Bv.Chacabuco 847
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Cel/WhatsApp: <b>3513820763</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Lunes a Viernes: <b>09hs a 20.30hs</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Sabados: <b>09hs a 13hs</b>
-                    </li>
-                  
-                      <li>
-                        
-                    </li>
-                </ul>
-                <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
-            </article>
-            <article class="seccion_sucursales__direccion">
-                <h3 class="seccion_sucursales__titulo">PATIO OLMOS:</h3>
-                <ul>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                    </ul>
+                    <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
+                </article>
+                <article class="col">
+                    <h3 class="seccion_sucursales__titulo">PATIO OLMOS:</h3>
+                    <ul>
+                        <li class="seccion_sucursales__info">
                         Vélez Sanrdfiel 361
-                    </li>
-                    <li class="seccion_sucursales__info">
-                        Cel/WhatsApp: <b>351804432</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
+                        Cel/WhatsApp: <b>3518044321</b>
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Lunes a Viernes: <b>09hs a 20.30hs</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Sabados: <b>09hs a 13hs</b>
-                    </li>
-                      <li>
-                        
-                    </li>
-                </ul>
-                <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
-            </article>
-            <article class="seccion_sucursales__direccion">
-                <h3 class="seccion_sucursales__titulo">ROSARIO:</h3>
-                <ul>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                    </ul>
+                    <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
+                </article>
+                <article class="col">
+                    <h3 class="seccion_sucursales__titulo">ROSARIO:</h3>
+                    <ul>
+                        <li class="seccion_sucursales__info">
                         Moreno 520
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Cel/WhatsApp: <b>3416841099</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Lunes a Viernes: <b>09hs a 20.30hs</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Sabados: <b>09hs a 13hs</b>
-                    </li>
-                      <li>
-                        
-                    </li>
-                </ul>
-                <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
-            </article>
-        </section>
-        <section class="seccion_sucursales">
-            <article class="seccion_sucursales__direccion">
-                <h3 class="seccion_sucursales__titulo">ALTO ROSARIO:</h3>
-                <ul>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                    </ul>
+                    <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
+                </article>
+            </section>
+            <section class="row">
+                <article class="col">
+                    <h3 class="seccion_sucursales__titulo">ALTO ROSARIO:</h3>
+                    <ul>
+                        <li class="seccion_sucursales__info">
                         Junin 325
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Cel/WhatsApp: <b>3513825214</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Lunes a Viernes: <b>09hs a 20.30hs</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Sabados: <b>09hs a 13hs</b>
-                    </li>
-                      <li>
-                        
-                    </li>
-                </ul>
-                <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
-            </article>
-            <article class="seccion_sucursales__direccion">
-                <h3 class="seccion_sucursales__titulo">CORDOBA SHOPPING:</h3>
-                <ul>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                    </ul>
+                    <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
+                </article>
+                <article class="col">
+                    <h3 class="seccion_sucursales__titulo">LA PLATA:</h3>
+                    <ul>
+                        <li class="seccion_sucursales__info">
                         Jose de Goyechea 503
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Cel/WhatsApp: <b>3513752632</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Lunes a Viernes: <b>09hs a 20.30hs</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Sabados: <b>09hs a 13hs</b>
-                    </li>
-                      <li>
-                        
-                    </li>
-                </ul>
-                <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
-            </article>
-            <article class="seccion_sucursales__direccion">
-                <h3 class="seccion_sucursales__titulo">NEUQUEN:</h3>
-                <ul>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                    </ul>
+                    <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
+                </article>
+                <article class="col">
+                    <h3 class="seccion_sucursales__titulo">NEUQUEN:</h3>
+                    <ul>
+                        <li class="seccion_sucursales__info">
                         Mendoza Nrte 2300
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Cel/WhatsApp: <b>3513820610</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Lunes a Viernes: <b>09hs a 20.30hs</b>
-                    </li>
-                    <li class="seccion_sucursales__info">
+                        </li>
+                        <li class="seccion_sucursales__info">
                         Sabados: <b>09hs a 13hs</b>
-                    </li>
-                      <li>
-                        
-                    </li>
-                </ul>
-                <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
-            </article>
-        </section>
+                        </li>
+                    </ul>
+                    <img class="seccion_sucursales__img" src="../img/sucursales.png" alt="">
+                </article>
+            </section>
+    </div>
     </main>
     <!--FOOTER DE LA PAGINA-->
     <footer class="footer">
@@ -186,6 +179,7 @@
         </nav>
         <h3 class="copirigth">© 2022 NaturellaSalon.</h3>  
       </footer>
-      <!--FIN DEL FOOTER DE LA PAGINA-->   
+      <!--FIN DEL FOOTER DE LA PAGINA-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>

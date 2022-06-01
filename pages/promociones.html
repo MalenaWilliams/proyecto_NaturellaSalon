@@ -5,43 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturella Salon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!--HEADER DE LA PAGINA-->
     <header class="header">
-        <img src="../img/Frame.svg" alt="" class="header__logo">
-        <nav class="enlaces__de__navegacion">
-            <ul class="header__lista_de_navegacion">
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="../index.html">INICIO</a>
-                </li> 
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./sucursales.html">SUCURSALES</a>
-                </li>
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./promociones.html">PROMOCIONES</a>
-                </li>
-                <li>
-                    <a class="header__enlaces_de_navegacion" href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+        <img src="../img/logo_naturella.jpg" alt="" class="header__logo">
+        <nav class="navbar navbar-expand-lg bg-light" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link " href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/sucursales.html">SUCURSALES</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="../pages/promociones.html">PROMOCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>    
         </nav>
     </header>
     <!-- FIN DEL HEADER DE LA PAGINA-->
     <main>
         <div class="promociones__banner">
             <h1 class="promociones__titulo">PROMOCIONES</h1>
-            <h2 class="promociones__subtitulo">Conocé las promociones y beneficios que tenemos para vos.</h2>
-            
+            <h2 class="promociones__subtitulo">Conocé las promociones y beneficios que tenemos para vos.</h2>    
         </div>
         <p class="promociones__parrafo">Naturella salón además de ofrecer una gran variedad de servicios con calidad garantizada, ahora también te ofrece todos los dias de la semana increibles
             descuentos para que tengas en cuenta a la hora de agendar tu turno.</p>
-        <section class="seccion_promociones">
-            <article class="seccion_promociones__opciones">
+        <section class="d-flex">
+            <article class="p-2 flex-fill">
                 <h3 class="seccion_promociones__titulo">
                         10% Y 20% <br> LUNES A MIERCOLES
                 </h3>
@@ -50,15 +58,15 @@
                         Promoción válida de Lunes a Miércoles en todas nuestras sucursales pagando en efectivo.
                 </p>
             </article>
-            <article>
-                    <img class="seccion_promociones__img" src="../img/semii.png" alt="">
+            <article class="p-2 flex-fill">
+                    <img class="seccion_promociones__img" src="../img/semipermanente.png" alt="">
             </article>
         </section>
-        <section class="seccion_promociones">
-            <article>
-                    <img class="seccion_promociones__img" src="../img/pedii.png" alt="">
+        <section class="d-flex">
+            <article class="p-2 flex-fill">
+                    <img class="seccion_promociones__img" src="../img/pedii1.png" alt="">
             </article>
-            <article class="seccion_promociones__opciones">
+            <article class="p-2 flex-fill">
                 <h3 class="seccion_promociones__titulo-invertido">
                         20% COMBOS <br> JUEVES A SABADOS
                 </h3>
@@ -68,7 +76,7 @@
                 </p>
             </article>
         </section>
-        <p class="promociones__parrafo_final">*Todos los precios y promociones, podrían variar sin previo aviso.</p>
+        <p class="text-center">*Todos los precios y promociones, podrían variar sin previo aviso.</p>
     </main>
     <!--FOOTER DE LA PAGINA-->
     <footer class="footer">
@@ -87,6 +95,7 @@
         </nav>
         <h3 class="copirigth">© 2022 NaturellaSalon.</h3>  
       </footer>
-      <!--FIN DEL FOOTER DE LA PAGINA-->   
+      <!--FIN DEL FOOTER DE LA PAGINA-->  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
 </body>
 </html>
