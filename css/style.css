@@ -328,7 +328,7 @@ video {
     font-family: 'Quicksand', sans-serif;
     font-size: 5em;
     margin-left: 55vmax;
-    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-width: 0.8px;
     -webkit-text-stroke-color: #CBB26A;
     font-weight: lighter;
 }
