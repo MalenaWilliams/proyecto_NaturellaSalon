@@ -1157,10 +1157,10 @@ video {
     }
 /*MEDIA QUERY 470PX SUCURSALES*/
     .sucursales__video {
-        font-size: 7px;
+        font-size: 6.7px;
     }
     video {
-        height: 22em;  
+        height: 29em;  
         margin-top: -15%;
     }
 /*MEDIA QUERY 470PX PROMOCIONES*/
