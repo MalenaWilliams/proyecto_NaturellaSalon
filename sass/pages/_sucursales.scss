@@ -1,0 +1,214 @@
+/* SECCION SUCURSALES*/
+.sucursales {
+    background-image: url(../multimedia/img/ladrillos.png); margin:0% ; background-size: cover;
+
+    &__banner {
+        background-image: url(../multimedia/img/banner_sucursales.jpg); background-position: center; margin-right: 0%;
+        height: 18.75em;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-large;
+        opacity: .93;
+    }
+    &__titulo {
+        color: $base;
+        font-family: $font-principal;
+        font-size: $tex-title;
+        margin-left: $spacing-small;
+        margin-top: $spacing-medium;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: $secondary;
+        font-weight: lighter; 
+    }
+    &__subtitulo {
+        color: $base;
+        font-family: $font-secondary;
+        font-size: $tex-small;
+        margin-left: $spacing-small;
+        font-weight: lighter; 
+        -webkit-text-stroke-width: 0.4px;
+        -webkit-text-stroke-color: $secondary;
+    }
+    &__video_contenedor {
+        margin-bottom: 17%; 
+        filter: grayscale(50%); 
+    }
+    &__video {
+        position: absolute;
+        width: 100%;   
+        object-fit: cover;
+    }
+    &__titulo_video { 
+        position: relative;
+        font-family: $font-secondary;
+        color: $base;
+        text-align: center;
+        font-size: $tex-medium;
+        --webkit-text-stroke-width: 0.5px;
+        --webkit-text-stroke-color: $base;
+        margin-left: $spacing-small;
+        margin-right: $spacing-small;
+        padding-top: $spacing-extra-large;
+    }
+}
+.seccion_sucursales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: $spacing-medium;
+
+    &__capa {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+        transition: 1s;
+    }
+    &___iframe {
+        width: 18.75em;
+        height: 25em;
+    }
+    &__direccion:hover > &__capa {
+        opacity: 1;
+        visibility: visible;
+        transition: 870ms;
+    }
+    &__direccion {
+        width: 18.75em;
+        height: 25em;
+        background-color: $base;
+        margin-bottom: $spacing-medium;
+        border-radius: 6%;
+        border: 2px solid $primary;
+        position: relative;
+        overflow: hidden;
+        padding-top: $spacing-extra-small;
+    }
+    &__titulo {
+        font-family: $font-principal; 
+        font-size: $tex-base;  
+        text-decoration: underline;
+        margin-bottom: $spacing-medium;
+        margin-left: $spacing-small;
+    }
+    &__info {
+        font-family: $font-secondary;
+        font-size: $tex-large;
+        line-height: 1.8;
+        margin-left: $spacing-extra-small;
+        margin-right: $spacing-extra-small;
+    }
+    &__img {
+        display: flex;
+        background-position: center;
+        width: 9.375em;
+        height: 3.75em;
+        margin-left: 4.5625em;
+        margin-top:$spacing-small;
+    }
+}
+/*MEDIA QUERY 1377PX SUCURSALES*/
+@media screen and (max-width: 1377px) {
+    .sucursales__titulo_video {
+        padding-top: $spacing-large;
+        font-size: $tex-base;
+    } 
+}
+/*MEDIA QUERY 1040PX SUCURSALES*/
+@media screen and (max-width: 1040px ) {
+    .sucursales__banner {
+        background-image: url(../multimedia/img/banner_sucursales2.png); background-position: center; margin-right: 0%;
+    }  
+    .seccion_sucursales {
+        font-size: 13px;
+        &__titulo {
+            margin-bottom: $spacing-small;
+        }
+    }
+}
+/*MEDIA QUERY 810PX SUCURSALES*/
+@media screen and (max-width: 810px) {
+    .sucursales__banner {
+        font-size: 12px;
+    }
+    .sucursales__titulo {
+        margin-top: $spacing-small;
+    }
+    .sucursales__titulo_video {
+        font-size: $tex-large;
+        padding-top: $spacing-medium;
+    }
+    .seccion_sucursales {
+        flex-wrap: wrap;
+    }
+}
+/*MEDIA QUERY 660PX SUCURSALES*/
+@media screen and (max-width: 660px) {
+    .sucursales {
+        background-size: unset;
+        &__banner {
+            background-image: url(../multimedia/img/banner_sucursales3.png); background-position: center;
+            margin-top: 1.5%;
+            font-size: 10px;
+        }
+        &__video_contenedor {
+            margin-bottom: 25%;
+            font-size: 8px;
+        }
+        &__video {
+            height: 22em;  
+            margin-top: -10%;
+        }
+        &__titulo_video {
+            padding-top: $spacing-extra-small;
+            font-size: $tex-medium;
+        }
+    }
+    .seccion_sucursales {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4%;
+        font-size: 11px;
+        &__iframe {
+            width: 73vw;
+        }
+        &__direccion {
+            width: 73vw;
+            padding-right: $spacing-small;
+        }
+        &__titulo {
+            font-size: $tex-medium;
+            text-align: center;
+            margin-left: 0%;
+        }
+        &__info {
+            font-size: $tex-base;
+        }
+        &__img {
+            margin-top: .8em;
+            width: 25vw;
+            height: 5vh;
+            margin-left: 35%;
+        }
+    }
+}
+@media screen and (max-width: 470px) {
+    /*MEDIA QUERY 470PX SUCURSALES*/
+    .sucursales__banner {
+        font-size: 7px;
+        &__video_contenedor {
+        font-size: 6.7px;
+        }
+        &__video {
+            height: 29em;  
+            margin-top: -15%;
+        }
+    }
+    .seccion_sucursales {
+        font-size: 8px;
+        &__titulo {
+            margin-bottom: $spacing-extra-small;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.header {
+    background-color: $base;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    height: 10em;
+
+    &__logo {
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: $spacing-small;
+        width: 18%;
+        height: 80%;
+        margin-bottom:$spacing-small;
+        margin-top:$spacing-small;
+    }
+
+    &__barra_de_navegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__label, &__input {
+        display: none;
+    }
+
+    &__lista_de_navegacion {
+        display: flex;
+    }
+
+    &__enlaces_de_navegacion {
+        font-family: $font-principal;
+        color: $secondary;
+        margin-inline-end: $spacing-extra-small;
+        font-size: $tex-base;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    &__enlaces_de_navegacion:hover {
+        color: $primary;
+    }
+}
+@media screen and (max-width: 1377px) {
+    .header__enlaces_de_navegacion {
+        font-size: $tex-large;
+    }
+    .header__logo {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 1040px ) {
+    header {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .header {
+        height: 15em;
+        font-size: 10px;
+        flex-direction: column;
+        padding-bottom: 4%;
+        &__logo {
+            height: 7vh;
+            width: 32vw;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        &__hamburguesa_img {
+            width: 5em;
+            height: 3em
+        }
+        &__label {
+            display: block;
+            float: right;
+        }
+        &__input:checked ~ nav {
+            display:block ;
+        }
+        &__barra_de_navegacion {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 470px) {
+    .header__barra_de_navegacion {
+        margin-left: $spacing-extra-small;
+    }
+    .header__enlaces_de_navegacion {
+        font-size:$tex-estra-large;
+        margin-inline-end: .7em;
+    }
+    .header__logo {
+        width: 40vw;
+    }
+}

@@ -1,0 +1,19 @@
+/*Externos*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Quicksand:wght@300&display=swap');
+
+/*Misc*/
+@import './misc/normalize';
+@import './misc/animations';
+@import './misc/variables';
+
+/*Partials*/
+@import './partials/header';
+@import './partials/footer';
+
+/*Pages*/
+@import './pages/index';
+@import './pages/sucursales';
+@import './pages/servicios';
+@import './pages/promociones';
+@import './pages/contacto';
+

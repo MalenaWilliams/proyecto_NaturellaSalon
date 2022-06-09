@@ -1,0 +1,31 @@
+.footer {
+    background-color: $tex-color;
+    display: flex;  
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-top: $spacing-medium;
+    height: 11em;
+    
+    &__lista_de_navegacion {
+        display: flex;
+    }
+    &__enlaces_redes {
+        margin-inline-end: 1.25em;
+    }
+
+    &__imagenes_redes {
+        border-radius: 50%;
+    }
+
+    &__copirigth {
+        color: $secondary;
+        margin-top: $spacing-extra-small;
+        margin-right: 1%;
+    }
+}
+@media screen and (max-width: 1040px ) {
+    footer {
+        font-size: 13px;
+    }
+}

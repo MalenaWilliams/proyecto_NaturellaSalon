@@ -1,0 +1,141 @@
+/* SECCION CONTACTO*/
+.contacto__banner {
+    background-image: url(../multimedia/img/rosa.jpg);  background-size: cover; background-position: center;
+    width: 98.95vw;
+    height: 18.75em;
+    display: flex;
+    flex-direction: column;
+}
+.contacto__titulo {
+    font-weight: lighter;
+    color: $base;
+    font-size: $tex-title;
+    margin-left: $spacing-small;
+    margin-top: $spacing-small;
+    font-family: $font-principal;
+}
+.contacto__subtitulo {
+    font-family: $font-secondary;
+    font-size:$tex-small;
+    margin-left: $spacing-small;
+    color: $base;
+}
+.contacto__seccion {
+    flex-direction: row;
+    margin-top: $spacing-large;
+    justify-content: space-evenly;
+    display: flex;
+}
+.contacto__articulos {
+    margin-bottom: $spacing-medium;
+    margin-top: $spacing-medium;
+}
+.contacto__form {
+    width: 40em;
+    min-height: 25em;
+    border-radius: 5%;
+    margin-bottom: $spacing-large;
+    border: 2px solid $primary;
+    background-color: $primary;
+}
+.contacto__form-contenedor {
+    flex-direction: column;
+    margin-left: $spacing-small;
+    margin-right: $spacing-small;
+    margin-bottom: $spacing-medium;
+    padding: $spacing-small;
+    display: flex;
+}
+.contacto__form_titulo {
+    font-family: $font-secondary;
+    margin-bottom: $spacing-small;
+    text-align: center;
+}
+.contacto__form_imput {
+    margin-top: .6em;
+    border-radius: 2%;
+    outline: none;
+    border: none;
+    border: solid .3px $primary;
+    padding: 5px;
+    font-family: $font-secondary;
+}
+.contacto__form_imput--mensaje {
+    margin-top: .6em;
+    border-radius: 2%;
+    resize: none;
+    outline: none;
+    border: none;
+    border: solid .3px $primary;
+    padding: 5px;
+    font-family: $font-secondary;
+}
+.contacto__form_cta {
+    font-size: $tex-large;
+    margin-top: 0.625em;
+    border: none;
+    border: solid .3px $primary;
+    padding: 5px;
+    cursor: pointer;
+    font-family: $font-secondary;
+}
+.contacto__mapa {
+    height: 25em;
+    border-radius: 5%;
+    border: 2px solid $primary;
+    width: 40em;
+} 
+
+/*MEDIA QUERY 1377PX CONTACTO*/
+@media screen and (max-width: 1377px) {
+    .contacto__seccion {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+/*MEDIA QUERY 1040PX CONTACTO*/
+@media screen and (max-width: 1040px ) {
+    .contacto__banner {
+        font-size: 12px;
+    }
+}
+/*MEDIA QUERY 810PX CONTACTO*/
+@media screen and (max-width: 810px) {
+    .contacto__banner {
+        font-size: 10px;
+    }
+    .contacto__seccion {
+        font-size: 12px;
+    }
+    .contacto__articulos {
+        margin-top: $spacing-small;
+        margin-bottom: $spacing-small;
+    }
+    
+}
+/*MEDIA QUERY 660PX CONTACTO*/
+@media screen and (max-width: 660px) {
+    .contacto__banner {
+        margin-top: $spacing-extra-small;
+        font-size: 8px;
+    }
+    .contacto__form {
+        width: 80vw;
+    }
+    .contacto__mapa {
+        width: 80vw;
+    }  
+}
+/*MEDIA QUERY 470PX CONTACTO*/
+@media screen and (max-width: 470px) {
+    .contacto__banner {
+        font-size: 6.5px;
+    }
+    .contacto__form {
+        font-size: 9.5px;
+    }
+    .contacto__form-contenedor {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
