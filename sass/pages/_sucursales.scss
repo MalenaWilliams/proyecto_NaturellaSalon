@@ -1,33 +1,32 @@
 /* SECCION SUCURSALES*/
 .sucursales {
-    background-image: url(../multimedia/img/ladrillos.png); margin:0% ; background-size: cover;
+    background-image: url(../multimedia/img/ladrillos.jpg); margin:0% ; background-size: cover;
 
     &__banner {
         background-image: url(../multimedia/img/banner_sucursales.jpg); background-position: center; margin-right: 0%;
         height: 18.75em;
-        display: flex;
-        flex-direction: column;
+        @include flex (column,flex-start,flex-start,0);
         margin-bottom: $spacing-large;
         opacity: .93;
     }
     &__titulo {
-        color: $base;
+        color: map-get($colores, base);
         font-family: $font-principal;
         font-size: $tex-title;
         margin-left: $spacing-small;
         margin-top: $spacing-medium;
         -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: $secondary;
+        -webkit-text-stroke-color: map-get($colores, secondary);
         font-weight: lighter; 
     }
     &__subtitulo {
-        color: $base;
+        color: map-get($colores, base);
         font-family: $font-secondary;
         font-size: $tex-small;
         margin-left: $spacing-small;
         font-weight: lighter; 
         -webkit-text-stroke-width: 0.4px;
-        -webkit-text-stroke-color: $secondary;
+        -webkit-text-stroke-color: map-get($colores, secondary);
     }
     &__video_contenedor {
         margin-bottom: 17%; 
@@ -41,20 +40,18 @@
     &__titulo_video { 
         position: relative;
         font-family: $font-secondary;
-        color: $base;
+        color: map-get($colores, base);
         text-align: center;
         font-size: $tex-medium;
         --webkit-text-stroke-width: 0.5px;
-        --webkit-text-stroke-color: $base;
+        --webkit-text-stroke-color: map-get($colores, base);
         margin-left: $spacing-small;
         margin-right: $spacing-small;
         padding-top: $spacing-extra-large;
     }
 }
 .seccion_sucursales {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex (row,space-evenly,flex-start,0);
     margin-bottom: $spacing-medium;
 
     &__capa {
@@ -65,7 +62,7 @@
         opacity: 0;
         transition: 1s;
     }
-    &___iframe {
+    &__iframe {
         width: 18.75em;
         height: 25em;
     }
@@ -77,10 +74,10 @@
     &__direccion {
         width: 18.75em;
         height: 25em;
-        background-color: $base;
+        background-color: map-get($colores, base);
         margin-bottom: $spacing-medium;
         border-radius: 6%;
-        border: 2px solid $primary;
+        border: 2px solid map-get($colores, primary);
         position: relative;
         overflow: hidden;
         padding-top: $spacing-extra-small;
@@ -118,7 +115,7 @@
 /*MEDIA QUERY 1040PX SUCURSALES*/
 @media screen and (max-width: 1040px ) {
     .sucursales__banner {
-        background-image: url(../multimedia/img/banner_sucursales2.png); background-position: center; margin-right: 0%;
+        background-image: url(../multimedia/img/banner_sucursales2.jpg); background-position: center; margin-right: 0%;
     }  
     .seccion_sucursales {
         font-size: 13px;
@@ -134,10 +131,10 @@
     }
     .sucursales__titulo {
         margin-top: $spacing-small;
-    }
-    .sucursales__titulo_video {
+        &_video {
         font-size: $tex-large;
         padding-top: $spacing-medium;
+        }
     }
     .seccion_sucursales {
         flex-wrap: wrap;
@@ -148,7 +145,7 @@
     .sucursales {
         background-size: unset;
         &__banner {
-            background-image: url(../multimedia/img/banner_sucursales3.png); background-position: center;
+            background-image: url(../multimedia/img/banner_sucursales3.jpg); background-position: center;
             margin-top: 1.5%;
             font-size: 10px;
         }
@@ -166,8 +163,7 @@
         }
     }
     .seccion_sucursales {
-        flex-direction: column;
-        align-items: center;
+        @include flex (column,center,center,0);
         margin-bottom: 4%;
         font-size: 11px;
         &__iframe {

@@ -1,25 +1,24 @@
 /* SECCION SERVICIOS*/
 .servicios {
-    background-image: url(../multimedia/img/fondodiam.png); 
+    background-image: url(../multimedia/img/fondodiam.jpg); 
 
     &__banner {
     background-image: url(../multimedia/img/im.jpg); background-size: cover; background-position: top;
     height: 18.75em;
-    display: flex;
-    flex-direction: column;
+    @include flex (column,flex-start,flex-start,0);
     }
     &__titulo {
-        color: $tex-color;
+        color: map-get($colores, tex-color);
         font-family: $font-principal;
         font-size: $tex-title;
         margin-top: $spacing-small;
         margin-left: $spacing-small;
         -webkit-text-stroke-width: 0.4px;
-        -webkit-text-stroke-color: $secondary;
+        -webkit-text-stroke-color: map-get($colores, secondary);
         font-weight: lighter;
     }
     &__subtitulo {
-        color: $tex-color;
+        color: map-get($colores, tex-color);
         font-family: $font-secondary;
         font-size: $tex-small;
         margin-left: $spacing-small;
@@ -27,17 +26,15 @@
     }
 } 
 .seccion_servicios {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex (row,space-evenly,flex-start,0);
     margin-top: $spacing-large;
 
     &__opciones {
         width: 18.75em;
         height: 25em;
-        background-color: $base;
+        background-color: map-get($colores, base);
         margin-bottom: $spacing-medium;
-        border: solid 1px $primary;
+        border: solid 1px map-get($colores, primary);
         border-radius: 6%;
         padding-bottom: $spacing-extra-small;
     }
@@ -56,8 +53,8 @@
         text-align: center;
         font-size: $tex-medium;
         -webkit-text-stroke-width: 0.25px;
-        -webkit-text-stroke-color: $tex-color;
-        color: $secondary;
+        -webkit-text-stroke-color: map-get($colores, tex-color);
+        color: map-get($colores, secondary);
     }
     &__lista {
         list-style-type: disc;

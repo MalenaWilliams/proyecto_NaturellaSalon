@@ -1,13 +1,10 @@
 .header {
-    background-color: $base;
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
+    background-color: map-get($colores, base);
+    @include flex (row,space-between,center,0);
     height: 10em;
 
     &__logo {
-        justify-content: flex-start;
-        align-items: center;
+        @include flex (row,flex-start,center,0);
         padding-left: $spacing-small;
         width: 18%;
         height: 80%;
@@ -16,10 +13,7 @@
     }
 
     &__barra_de_navegacion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (row,space-between,center,0);
     }
 
     &__label, &__input {
@@ -32,7 +26,7 @@
 
     &__enlaces_de_navegacion {
         font-family: $font-principal;
-        color: $secondary;
+        color: map-get($colores, secondary);
         margin-inline-end: $spacing-extra-small;
         font-size: $tex-base;
         text-decoration: none;
@@ -40,7 +34,7 @@
     }
 
     &__enlaces_de_navegacion:hover {
-        color: $primary;
+        color: map-get($colores, primary);
     }
 }
 @media screen and (max-width: 1377px) {
@@ -60,11 +54,11 @@
     .header {
         height: 15em;
         font-size: 10px;
-        flex-direction: column;
-        padding-bottom: 4%;
+        @include flex (column,center,center,4%);
         &__logo {
             height: 7vh;
             width: 32vw;
+            padding-left: 0;
             margin-top: 1%;
             margin-bottom: 1%;
         }
@@ -74,7 +68,6 @@
         }
         &__label {
             display: block;
-            float: right;
         }
         &__input:checked ~ nav {
             display:block ;
@@ -86,7 +79,7 @@
 }
 @media screen and (max-width: 470px) {
     .header__barra_de_navegacion {
-        margin-left: $spacing-extra-small;
+        margin-left: ($spacing-extra-small/3);
     }
     .header__enlaces_de_navegacion {
         font-size:$tex-estra-large;

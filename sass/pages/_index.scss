@@ -1,33 +1,33 @@
 /* INDEX DE LA PAGINA*/
 .index {
     margin-top: $spacing-extra-small;
-    background-image: url(../multimedia/img/fondo_index.png);   background-position: top left; background-repeat: no-repeat;
+    background-image: url(../multimedia/img/fondo_index.jpg);   background-position: top left; background-repeat: no-repeat;
+
     &__contenedor {
-        display: flex;
-        flex-direction: row;  
+        @include flex (row,space-evenly,space-evenly,0);
     }
     &__titulo {
-        color: $base;
+        color: map-get($colores, base);
         font-family: $font-principal;
         font-size: $tex-title;
         margin-top: $spacing-medium;
         margin-bottom: $spacing-extra-small;
         margin-left: $spacing-extra-small;
-        background-color: $primary; display: inline-flex;
+        background-color: map-get($colores, primary); display: inline-flex;
         font-weight: lighter; 
     }
     &__slogan {
         font-family: $font-secondary;
         font-size: $tex-subtitle;
-        color: $tex-color;  
+        color: map-get($colores, tex-color);  
         margin-left: $spacing-extra-small;
         font-weight: lighter; 
     }
 }
 hr {
     margin-top: $spacing-large;
-    border: 0.8px solid #000;
-    margin-left: $spacing-extra-large;
+    border: 0.8px solid map-get($colores, tex-color);
+    margin-left: $spacing-small;
 }
 /* SECCION IMAGENES DE MUESTRA EN EL INDEX*/
 .imagenes {
@@ -36,10 +36,8 @@ hr {
     grid-template-columns: 1fr 1.2fr 1.1fr .80fr .90fr 1.25fr;
     grid-template-rows: 1.3fr .50fr 2.5fr .30fr 1.55fr .91fr;
     margin-top: $spacing-large;
-    margin-left: $spacing-large;
-    margin-right: $spacing-large;
     &__muestra_img {
-        border: solid .5em $base;
+        border: solid .5em map-get($colores, base);
     }
     &__muestra:nth-of-type(1) {
         grid-column: 2/5;
@@ -59,13 +57,11 @@ hr {
     }
 }
 .imagenes_servicios {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex (row,center,flex-start,0);
     margin-top: $spacing-large;
     &__img {
         border-radius: 50%;
-        border: solid 0.9375em $primary ;
+        border: solid 0.9375em map-get($colores, primary) ;
         width: 16vw;
         transition: 920ms;
     }
@@ -82,7 +78,7 @@ hr {
         width: 100%;
         height: 100%;
         top: 0;
-        background-color: $primary;
+        background-color: map-get($colores, primary);
         opacity: 0;
         visibility: hidden;
         transition: 920ms;
@@ -90,7 +86,7 @@ hr {
     &__texto {
         font-family: $font-secondary;
         font-size: $tex-small;
-        color: $base;
+        color: map-get($colores, base);
         text-align: center;
         margin-top: 42%;
     }
@@ -111,9 +107,8 @@ hr {
 }
 /*QUIENES SOMOS*/
 .quienes_somos {
-    display: flex;
-    flex-direction: row;
-    background-color: $primary;
+    @include flex (row,center,center,0);
+    background-color: map-get($colores, primary);
     margin-top: $spacing-medium;
     &__contenedor {
         flex-direction: column;
@@ -133,23 +128,27 @@ hr {
     &__parrafo {
         font-family: $font-secondary;
         font-size: $tex-base;
-        color: $tex-color;
+        color: map-get($colores, tex-color);
         margin: $spacing-small $spacing-extra-small 0% $spacing-extra-small;
     }
 }
 .local {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex (row,space-evenly,flex-start,0);
     margin: $spacing-large;
     &__imagenes{
         border: 1px solid;
     }
 }
+/*MEDIA QUERY 1600PX*/
+@media screen and (max-width: 1600px) {
+    body {
+        font-size: 14px;
+    }
+}
 /*MEDIA QUERY 1377PX*/
 @media screen and (max-width: 1377px) {
     .index {
-        background-image: url(../multimedia/img/fondo_index2.png); 
+        background-image: url(../multimedia/img/fondo_index2.jpg); 
     
         &__contenedor {
         flex-direction: column;  
@@ -165,13 +164,13 @@ hr {
             grid-template-columns: .5fr .52fr .6fr .80fr 2fr 1.25fr;
             grid-template-rows: .93fr .20fr 1.58fr 1fr 1fr .451fr;
             gap: $spacing-medium;
-            padding-left: 14%;
+            padding-left: 20%;
             padding-top: $spacing-large;
             margin-top: 36em;
-            border: solid 2px $primary;
+            border: solid 2px map-get($colores, primary);
     
             &__muestra_img {
-                border: solid .5em $primary;
+                border: solid .5em map-get($colores, primary);
             }
         }
     .imagenes_servicios__box {
@@ -190,13 +189,11 @@ hr {
 /*MEDIA QUERY 1040PX INDEX*/
 @media screen and (max-width: 1040px ) {
     .imagenes {
-        padding: 0;
-        display: flex;
-        flex-direction: row;
+        @include flex (row,center,center,0.5%);
+        padding-top: 0;
+        padding-right: $spacing-large;
+        padding-left: $spacing-large;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: .5%;
-
         &__muestra:nth-child(1) {
             background-image: url(../multimedia/img/img_muestra1.jpg); background-size: cover; background-position: center;
         }
@@ -225,12 +222,10 @@ hr {
     }
     .quienes_somos {
         flex-direction: column;
-        color: $secondary;
+        color: map-get($colores, secondary);
 
         &__contenedor {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex (column,center,center,0);
         }
         &__titulo {
             font-size:$tex-title;
@@ -261,8 +256,7 @@ hr {
         font-size: 12px;
     }
     .imagenes_servicios {
-        flex-direction: column;
-        align-items: center;
+        @include flex (column,center,center,0);
         &__img {
             width: 47vw;
         }
@@ -278,8 +272,7 @@ hr {
         height: 15vh;
     }
     .local {
-        flex-direction: column;
-        align-items: center;
+        @include flex (column,center,center,0);
         margin-top: 0%;
         &__imagenes{
             width: 65vw;
@@ -290,12 +283,14 @@ hr {
 /*MEDIA QUERY 660PX INDEX*/
 @media screen and (max-width: 660px) {
     .index {
-        background-image: url(../multimedia/img/fondo_index3.png);
+        background-image: url(../multimedia/img/fondo_index3.jpg);
         &__contenedor {
             font-size: 11px;
         }
     }
     .imagenes {
+        padding-right: 0;
+        padding-left: 0;
         margin-left: $spacing-small;
         width: 90%;
         margin-top: 23em;

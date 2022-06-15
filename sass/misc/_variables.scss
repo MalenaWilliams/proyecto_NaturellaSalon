@@ -1,9 +1,17 @@
 
     /*COLORES*/
-    $primary: #ed6b5a62;
-    $secondary: #CBB26A;
-    $base: #FDFDFA;
-    $tex-color:#2B2B2B;
+    $colores: (
+    primary: #ed6b5a62,
+    secondary: #CBB26A,
+    base: #FDFDFA,
+    tex-color:#2B2B2B
+    );
+
+    @each $color, $value in $colores {
+        .#{$color} {
+            color: #{$value};
+        }
+    }
 
     /*ESPACIOS*/
     $spacing-extra-large:8.5rem;

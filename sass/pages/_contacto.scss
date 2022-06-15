@@ -3,12 +3,11 @@
     background-image: url(../multimedia/img/rosa.jpg);  background-size: cover; background-position: center;
     width: 98.95vw;
     height: 18.75em;
-    display: flex;
-    flex-direction: column;
+    @include flex (column,flex-start,flex-start,0);
 }
 .contacto__titulo {
     font-weight: lighter;
-    color: $base;
+    color: map-get($colores, base);
     font-size: $tex-title;
     margin-left: $spacing-small;
     margin-top: $spacing-small;
@@ -18,13 +17,11 @@
     font-family: $font-secondary;
     font-size:$tex-small;
     margin-left: $spacing-small;
-    color: $base;
+    color: map-get($colores, base);
 }
 .contacto__seccion {
-    flex-direction: row;
+    @include flex (row,space-evenly,flex-start,$spacing-small);
     margin-top: $spacing-large;
-    justify-content: space-evenly;
-    display: flex;
 }
 .contacto__articulos {
     margin-bottom: $spacing-medium;
@@ -35,8 +32,8 @@
     min-height: 25em;
     border-radius: 5%;
     margin-bottom: $spacing-large;
-    border: 2px solid $primary;
-    background-color: $primary;
+    border: 2px solid map-get($colores, primary);
+    background-color: map-get($colores, primary);
 }
 .contacto__form-contenedor {
     flex-direction: column;
@@ -56,25 +53,20 @@
     border-radius: 2%;
     outline: none;
     border: none;
-    border: solid .3px $primary;
+    border: solid .3px map-get($colores, primary);
     padding: 5px;
     font-family: $font-secondary;
-}
-.contacto__form_imput--mensaje {
-    margin-top: .6em;
-    border-radius: 2%;
-    resize: none;
-    outline: none;
-    border: none;
-    border: solid .3px $primary;
-    padding: 5px;
-    font-family: $font-secondary;
+    &--mensaje {
+        @extend .contacto__form_imput;
+        resize: none;
+        min-height: 4.5em;
+    }
 }
 .contacto__form_cta {
     font-size: $tex-large;
     margin-top: 0.625em;
     border: none;
-    border: solid .3px $primary;
+    border: solid .3px map-get($colores, primary);
     padding: 5px;
     cursor: pointer;
     font-family: $font-secondary;
@@ -82,15 +74,13 @@
 .contacto__mapa {
     height: 25em;
     border-radius: 5%;
-    border: 2px solid $primary;
+    border: 2px solid map-get($colores, primary);
     width: 40em;
 } 
-
 /*MEDIA QUERY 1377PX CONTACTO*/
 @media screen and (max-width: 1377px) {
     .contacto__seccion {
-        flex-direction: column-reverse;
-        align-items: center;
+        @include flex (column-reverse,center,center,0);
     }
 }
 /*MEDIA QUERY 1040PX CONTACTO*/
@@ -111,7 +101,6 @@
         margin-top: $spacing-small;
         margin-bottom: $spacing-small;
     }
-    
 }
 /*MEDIA QUERY 660PX CONTACTO*/
 @media screen and (max-width: 660px) {
