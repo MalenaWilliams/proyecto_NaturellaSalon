@@ -1,0 +1,8 @@
+SEO agregado en el sitio web:
+
+-Palabras claves mediante la etiqueta meta kaywords.
+-Descripcion especifica para cada pagina de mi sitio web mediante la etiqueta meta description.
+-Cambie los titulos de todas mis paginas del sitio por uno mas especifico.
+-Cambie el formato de todas mis imagenes en las que no necesitaba transparencia, de png a jpg.
+-Modifique el tamaño de pixeles de mis imagenes al necesario con figma.
+-Agregue una brebe descripcion de todas mis imagenes en los "alt".
