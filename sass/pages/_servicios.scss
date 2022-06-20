@@ -30,12 +30,13 @@
     margin-top: $spacing-large;
 
     &__opciones {
-        width: 18.75em;
-        height: 25em;
+        width: 20em;
+        height: 28em;
         background-color: map-get($colores, base);
         margin-bottom: $spacing-medium;
         border: solid 1px map-get($colores, primary);
         border-radius: 6%;
+        padding-left: $spacing-extra-small /2;
         padding-bottom: $spacing-extra-small;
     }
     &__img {
@@ -43,13 +44,13 @@
         width: 7.5em;
         height: 7.5em;
         margin-top: $spacing-extra-small;
-        margin-left: $spacing-large;   
+        margin-left: $spacing-large + 0.5 ;   
     }
     &__titulo {
         font-family: $font-principal;
         font-weight: lighter;
         text-decoration: underline;
-        margin-bottom: $spacing-extra-small;
+        margin-bottom: $spacing-small;
         text-align: center;
         font-size: $tex-medium;
         -webkit-text-stroke-width: 0.25px;
