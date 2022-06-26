@@ -1,13 +1,16 @@
 /* SECCION CONTACTO*/
+.contacto {
+    background-image: url(../multimedia/img/fondo_contacto.jpg); background-size: cover; 
+}
 .contacto__banner {
-    background-image: url(../multimedia/img/rosa.jpg);  background-size: cover; background-position: center;
+    background-image: url(../multimedia/img/banner_contacto.jpg); background-size: cover; background-position: center;
     width: 98.95vw;
     height: 18.75em;
     @include flex (column,flex-start,flex-start,0);
 }
 .contacto__titulo {
     font-weight: lighter;
-    color: map-get($colores, base);
+    color: map-get($colores, tex-color);
     font-size: $tex-title;
     margin-left: $spacing-small;
     margin-top: $spacing-small;
@@ -17,7 +20,7 @@
     font-family: $font-secondary;
     font-size:$tex-small;
     margin-left: $spacing-small;
-    color: map-get($colores, base);
+    color: map-get($colores, tex-color);
 }
 .contacto__seccion {
     @include flex (row,space-evenly,flex-start,$spacing-small);
@@ -32,8 +35,7 @@
     min-height: 25em;
     border-radius: 5%;
     margin-bottom: $spacing-large;
-    border: 2px solid map-get($colores, primary);
-    background-color: map-get($colores, primary);
+    background-color: map-get($colores, fondo);
 }
 .contacto__form-contenedor {
     flex-direction: column;
@@ -74,7 +76,6 @@
 .contacto__mapa {
     height: 25em;
     border-radius: 5%;
-    border: 2px solid map-get($colores, primary);
     width: 40em;
 } 
 /*MEDIA QUERY 1377PX CONTACTO*/

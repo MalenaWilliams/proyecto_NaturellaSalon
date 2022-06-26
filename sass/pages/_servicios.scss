@@ -1,26 +1,27 @@
 /* SECCION SERVICIOS*/
 .servicios {
-    background-image: url(../multimedia/img/fondodiam.jpg); 
-
+    background-image: url(../multimedia/img/im.jpg); background-size: cover;
     &__banner {
-    background-image: url(../multimedia/img/im.jpg); background-size: cover; background-position: top;
+    background-image: url(../multimedia/img/banner_servicios.jpg); background-size: cover;
     height: 18.75em;
     @include flex (column,flex-start,flex-start,0);
     }
     &__titulo {
-        color: map-get($colores, tex-color);
+        color: map-get($colores, base);
         font-family: $font-principal;
         font-size: $tex-title;
         margin-top: $spacing-small;
         margin-left: $spacing-small;
         -webkit-text-stroke-width: 0.4px;
-        -webkit-text-stroke-color: map-get($colores, secondary);
+        -webkit-text-stroke-color: map-get($colores, base);
         font-weight: lighter;
     }
     &__subtitulo {
-        color: map-get($colores, tex-color);
+        color: map-get($colores, base);
         font-family: $font-secondary;
         font-size: $tex-small;
+        -webkit-text-stroke-width: 0.4px;
+        -webkit-text-stroke-color: map-get($colores, base);
         margin-left: $spacing-small;
         font-weight: lighter;
     }
@@ -38,18 +39,24 @@
         border-radius: 6%;
         padding-left: $spacing-extra-small /2;
         padding-bottom: $spacing-extra-small;
+        transition: all 0.40s;
+    }
+    &__opciones:hover {
+        transform: translateY(-20px);
+        box-shadow: 0px 15px 25px map-get($colores, primary);
     }
     &__img {
         border-radius: 50%;
-        width: 7.5em;
-        height: 7.5em;
+        width: 11em;
+        height: 10em; 
         margin-top: $spacing-extra-small;
-        margin-left: $spacing-large + 0.5 ;   
+        margin-left: $spacing-medium;
+        filter: grayscale(35%);  
+        margin-bottom: $spacing-small; 
     }
     &__titulo {
         font-family: $font-principal;
         font-weight: lighter;
-        text-decoration: underline;
         margin-bottom: $spacing-small;
         text-align: center;
         font-size: $tex-medium;
@@ -85,6 +92,10 @@
         font-size: 12px;
         &__img {
             margin-left: $spacing-medium;
+            margin-bottom: $spacing-extra-small;
+        }
+        &__titulo {
+            margin-bottom: $spacing-extra-small;
         }
     }
 }

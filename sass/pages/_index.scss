@@ -129,7 +129,7 @@ hr {
         font-family: $font-secondary;
         font-size: $tex-base;
         color: map-get($colores, tex-color);
-        margin: $spacing-small $spacing-extra-small 0% $spacing-extra-small;
+        margin: $spacing-extra-small $spacing-extra-small $spacing-extra-small $spacing-small;
     }
 }
 .local {
@@ -212,6 +212,7 @@ hr {
         }
         &__muestra_img {
             opacity: 0;
+            max-width: 100%;
         }
     }
     .imagenes_servicios {

@@ -11,13 +11,16 @@ ul {
 
 /*COLORES*/
 .primary {
-  color: #ed6b5a62; }
+  color: #ed6b5a59; }
 
 .secondary {
   color: #CBB26A; }
 
 .base {
   color: #FDFDFA; }
+
+.fondo {
+  color: #fdfdfaa2; }
 
 .tex-color {
   color: #2B2B2B; }
@@ -63,7 +66,7 @@ ul {
     text-decoration: none;
     font-weight: bolder; }
   .header__enlaces_de_navegacion:hover {
-    color: #ed6b5a62; }
+    color: #ed6b5a59; }
 
 @media screen and (max-width: 1377px) {
   .header__enlaces_de_navegacion {
@@ -116,7 +119,6 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 0;
-  margin-top: 4rem;
   height: 11em; }
   .footer__lista_de_navegacion {
     display: flex; }
@@ -153,7 +155,7 @@ ul {
     margin-top: 4rem;
     margin-bottom: 1.2rem;
     margin-left: 1.2rem;
-    background-color: #ed6b5a62;
+    background-color: #ed6b5a59;
     display: inline-flex;
     font-weight: lighter; }
   .index__slogan {
@@ -199,7 +201,7 @@ hr {
   margin-top: 6rem; }
   .imagenes_servicios__img {
     border-radius: 50%;
-    border: solid 0.9375em #ed6b5a62;
+    border: solid 0.9375em #ed6b5a59;
     width: 16vw;
     transition: 920ms; }
   .imagenes_servicios__box {
@@ -213,7 +215,7 @@ hr {
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: #ed6b5a62;
+    background-color: #ed6b5a59;
     opacity: 0;
     visibility: hidden;
     transition: 920ms; }
@@ -242,7 +244,7 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 0;
-  background-color: #ed6b5a62;
+  background-color: #ed6b5a59;
   margin-top: 4rem; }
   .quienes_somos__contenedor {
     flex-direction: column;
@@ -260,7 +262,7 @@ hr {
     font-family: "Manrope", sans-serif;
     font-size: 1.5em;
     color: #2B2B2B;
-    margin: 2rem 1.2rem 0% 1.2rem; }
+    margin: 1.2rem 1.2rem 1.2rem 2rem; }
 
 .local {
   display: flex;
@@ -294,9 +296,9 @@ hr {
     padding-left: 20%;
     padding-top: 6rem;
     margin-top: 36em;
-    border: solid 2px #ed6b5a62; }
+    border: solid 2px #ed6b5a59; }
     .imagenes__muestra_img {
-      border: solid 0.5em #ed6b5a62; }
+      border: solid 0.5em #ed6b5a59; }
   .imagenes_servicios__box {
     margin: 1.2rem; }
     .imagenes_servicios__box__texto {
@@ -338,7 +340,8 @@ hr {
       width: 18em;
       height: 20em; }
     .imagenes__muestra_img {
-      opacity: 0; }
+      opacity: 0;
+      max-width: 100%; }
   .imagenes_servicios {
     font-size: 12.8px; }
     .imagenes_servicios__box:hover > .imagenes_servicios__img {
@@ -436,7 +439,6 @@ hr {
 /* SECCION SUCURSALES*/
 .sucursales {
   background-image: url(../multimedia/img/ladrillos.jpg);
-  margin: 0%;
   background-size: cover; }
   .sucursales__banner {
     background-image: url(../multimedia/img/banner_sucursales.jpg);
@@ -457,7 +459,7 @@ hr {
     margin-left: 2rem;
     margin-top: 4rem;
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #CBB26A;
+    -webkit-text-stroke-color: #FDFDFA;
     font-weight: lighter; }
   .sucursales__subtitulo {
     color: #FDFDFA;
@@ -466,7 +468,7 @@ hr {
     margin-left: 2rem;
     font-weight: lighter;
     -webkit-text-stroke-width: 0.4px;
-    -webkit-text-stroke-color: #CBB26A; }
+    -webkit-text-stroke-color: #FDFDFA; }
   .sucursales__video_contenedor {
     margin-bottom: 17%;
     filter: grayscale(50%); }
@@ -501,28 +503,32 @@ hr {
     opacity: 0;
     transition: 1s; }
   .seccion_sucursales__iframe {
-    width: 18.75em;
-    height: 25em; }
+    width: 20em;
+    height: 18em;
+    border-bottom: solid 1px; }
   .seccion_sucursales__direccion:hover > .seccion_sucursales__capa {
     opacity: 1;
     visibility: visible;
     transition: 870ms; }
+  .seccion_sucursales__direccion:hover {
+    box-shadow: 10px 15px 25px #ed6b5a59;
+    transform: translateY(-20px); }
   .seccion_sucursales__direccion {
-    width: 18.75em;
+    width: 20em;
     height: 25em;
-    background-color: #FDFDFA;
+    background-color: #fdfdfaa2;
     margin-bottom: 4rem;
-    border-radius: 6%;
-    border: 2px solid #ed6b5a62;
+    border-radius: 4%;
+    border: solid 1px #ed6b5a59;
     position: relative;
     overflow: hidden;
-    padding-top: 1.2rem; }
+    padding-top: 2rem;
+    transition: .40s; }
   .seccion_sucursales__titulo {
     font-family: "Quicksand", sans-serif;
     font-size: 1.5em;
-    text-decoration: underline;
-    margin-bottom: 4rem;
-    margin-left: 2rem; }
+    text-align: center;
+    margin-bottom: 2rem; }
   .seccion_sucursales__info {
     font-family: "Manrope", sans-serif;
     font-size: 1.2em;
@@ -532,10 +538,10 @@ hr {
   .seccion_sucursales__img {
     display: flex;
     background-position: center;
-    width: 9.375em;
-    height: 3.75em;
-    margin-left: 4.5625em;
-    margin-top: 2rem; }
+    width: 10em;
+    height: 5em;
+    margin-left: 5rem;
+    margin-top: 4rem; }
 
 /*MEDIA QUERY 1377PX SUCURSALES*/
 @media screen and (max-width: 1377px) {
@@ -613,11 +619,13 @@ hr {
   /*MEDIA QUERY 470PX SUCURSALES*/
   .sucursales__banner {
     font-size: 7px; }
-    .sucursales__banner__video_contenedor {
+  .sucursales__titulo_video {
+    padding-top: 0; }
+  .sucursales__video {
+    height: 24em;
+    margin-top: -15%; }
+    .sucursales__video_contenedor {
       font-size: 6.7px; }
-    .sucursales__banner__video {
-      height: 29em;
-      margin-top: -15%; }
   .seccion_sucursales {
     font-size: 8px; }
     .seccion_sucursales__titulo {
@@ -625,11 +633,11 @@ hr {
 
 /* SECCION SERVICIOS*/
 .servicios {
-  background-image: url(../multimedia/img/fondodiam.jpg); }
+  background-image: url(../multimedia/img/im.jpg);
+  background-size: cover; }
   .servicios__banner {
-    background-image: url(../multimedia/img/im.jpg);
+    background-image: url(../multimedia/img/banner_servicios.jpg);
     background-size: cover;
-    background-position: top;
     height: 18.75em;
     display: flex;
     flex-direction: column;
@@ -637,18 +645,20 @@ hr {
     align-items: flex-start;
     gap: 0; }
   .servicios__titulo {
-    color: #2B2B2B;
+    color: #FDFDFA;
     font-family: "Quicksand", sans-serif;
     font-size: 4.5em;
     margin-top: 2rem;
     margin-left: 2rem;
     -webkit-text-stroke-width: 0.4px;
-    -webkit-text-stroke-color: #CBB26A;
+    -webkit-text-stroke-color: #FDFDFA;
     font-weight: lighter; }
   .servicios__subtitulo {
-    color: #2B2B2B;
+    color: #FDFDFA;
     font-family: "Manrope", sans-serif;
     font-size: 2.5em;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #FDFDFA;
     margin-left: 2rem;
     font-weight: lighter; }
 
@@ -664,20 +674,25 @@ hr {
     height: 28em;
     background-color: #FDFDFA;
     margin-bottom: 4rem;
-    border: solid 1px #ed6b5a62;
+    border: solid 1px #ed6b5a59;
     border-radius: 6%;
     padding-left: 0.6rem;
-    padding-bottom: 1.2rem; }
+    padding-bottom: 1.2rem;
+    transition: all 0.40s; }
+  .seccion_servicios__opciones:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 15px 25px #ed6b5a59; }
   .seccion_servicios__img {
     border-radius: 50%;
-    width: 7.5em;
-    height: 7.5em;
+    width: 11em;
+    height: 10em;
     margin-top: 1.2rem;
-    margin-left: 6.5rem; }
+    margin-left: 4rem;
+    filter: grayscale(35%);
+    margin-bottom: 2rem; }
   .seccion_servicios__titulo {
     font-family: "Quicksand", sans-serif;
     font-weight: lighter;
-    text-decoration: underline;
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2em;
@@ -706,7 +721,10 @@ hr {
   .seccion_servicios {
     font-size: 12px; }
     .seccion_servicios__img {
-      margin-left: 4rem; } }
+      margin-left: 4rem;
+      margin-bottom: 1.2rem; }
+    .seccion_servicios__titulo {
+      margin-bottom: 1.2rem; } }
 
 /*MEDIA QUERY 660PX SERVICIOS*/
 @media screen and (max-width: 660px) {
@@ -770,7 +788,7 @@ hr {
     height: 20em;
     margin-top: 2rem;
     margin-bottom: 1.2rem;
-    border: 5px solid #ed6b5a62; }
+    border: 5px solid #ed6b5a59; }
   .seccion_promociones__titulo {
     font-family: "Quicksand", sans-serif;
     font-weight: lighter;
@@ -792,7 +810,7 @@ hr {
   .seccion_promociones__img {
     width: 25em;
     height: 20em;
-    border: 5px solid #ed6b5a62;
+    border: 5px solid #ed6b5a59;
     margin-top: 2rem; }
 
 /*MEDIA QUERY 1040PX PROMOCIONES*/
@@ -843,8 +861,12 @@ hr {
     font-size: 6.5px; } }
 
 /* SECCION CONTACTO*/
+.contacto {
+  background-image: url(../multimedia/img/fondo_contacto.jpg);
+  background-size: cover; }
+
 .contacto__banner {
-  background-image: url(../multimedia/img/rosa.jpg);
+  background-image: url(../multimedia/img/banner_contacto.jpg);
   background-size: cover;
   background-position: center;
   width: 98.95vw;
@@ -857,7 +879,7 @@ hr {
 
 .contacto__titulo {
   font-weight: lighter;
-  color: #FDFDFA;
+  color: #2B2B2B;
   font-size: 4.5em;
   margin-left: 2rem;
   margin-top: 2rem;
@@ -867,7 +889,7 @@ hr {
   font-family: "Manrope", sans-serif;
   font-size: 2.5em;
   margin-left: 2rem;
-  color: #FDFDFA; }
+  color: #2B2B2B; }
 
 .contacto__seccion {
   display: flex;
@@ -886,8 +908,7 @@ hr {
   min-height: 25em;
   border-radius: 5%;
   margin-bottom: 6rem;
-  border: 2px solid #ed6b5a62;
-  background-color: #ed6b5a62; }
+  background-color: #fdfdfaa2; }
 
 .contacto__form-contenedor {
   flex-direction: column;
@@ -907,7 +928,7 @@ hr {
   border-radius: 2%;
   outline: none;
   border: none;
-  border: solid 0.3px #ed6b5a62;
+  border: solid 0.3px #ed6b5a59;
   padding: 5px;
   font-family: "Manrope", sans-serif; }
   .contacto__form_imput--mensaje {
@@ -918,7 +939,7 @@ hr {
   font-size: 1.2em;
   margin-top: 0.625em;
   border: none;
-  border: solid 0.3px #ed6b5a62;
+  border: solid 0.3px #ed6b5a59;
   padding: 5px;
   cursor: pointer;
   font-family: "Manrope", sans-serif; }
@@ -926,7 +947,6 @@ hr {
 .contacto__mapa {
   height: 25em;
   border-radius: 5%;
-  border: 2px solid #ed6b5a62;
   width: 40em; }
 
 /*MEDIA QUERY 1377PX CONTACTO*/
