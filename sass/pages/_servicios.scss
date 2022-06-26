@@ -32,13 +32,12 @@
 
     &__opciones {
         width: 20em;
-        height: 28em;
+        height: 30em;
         background-color: map-get($colores, base);
         margin-bottom: $spacing-medium;
         border: solid 1px map-get($colores, primary);
         border-radius: 6%;
-        padding-left: $spacing-extra-small /2;
-        padding-bottom: $spacing-extra-small;
+        padding-left: $spacing-extra-small /3;
         transition: all 0.40s;
     }
     &__opciones:hover {
@@ -91,8 +90,8 @@
     .seccion_servicios {
         font-size: 12px;
         &__img {
-            margin-left: $spacing-medium;
             margin-bottom: $spacing-extra-small;
+            margin-left: $spacing-small+1;
         }
         &__titulo {
             margin-bottom: $spacing-extra-small;

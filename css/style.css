@@ -671,13 +671,12 @@ hr {
   margin-top: 6rem; }
   .seccion_servicios__opciones {
     width: 20em;
-    height: 28em;
+    height: 30em;
     background-color: #FDFDFA;
     margin-bottom: 4rem;
     border: solid 1px #ed6b5a59;
     border-radius: 6%;
-    padding-left: 0.6rem;
-    padding-bottom: 1.2rem;
+    padding-left: 0.4rem;
     transition: all 0.40s; }
   .seccion_servicios__opciones:hover {
     transform: translateY(-20px);
@@ -721,8 +720,8 @@ hr {
   .seccion_servicios {
     font-size: 12px; }
     .seccion_servicios__img {
-      margin-left: 4rem;
-      margin-bottom: 1.2rem; }
+      margin-bottom: 1.2rem;
+      margin-left: 3rem; }
     .seccion_servicios__titulo {
       margin-bottom: 1.2rem; } }
 
