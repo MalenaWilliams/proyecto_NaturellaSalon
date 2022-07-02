@@ -18,6 +18,7 @@
 }
 .contacto__subtitulo {
     font-family: $font-secondary;
+    font-weight: lighter;
     font-size:$tex-small;
     margin-left: $spacing-small;
     color: map-get($colores, tex-color);
@@ -49,6 +50,7 @@
     font-family: $font-secondary;
     margin-bottom: $spacing-small;
     text-align: center;
+    font-weight: lighter;
 }
 .contacto__form_imput {
     margin-top: .6em;

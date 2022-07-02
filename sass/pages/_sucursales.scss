@@ -52,7 +52,6 @@
 .seccion_sucursales {
     @include flex (row,space-evenly,flex-start,0);
     margin-bottom: $spacing-medium;
-
     &__capa {
         position: absolute;
         width: 100%;
@@ -63,8 +62,9 @@
     }
     &__iframe {
         width: 20em;
-        height: 18em;
+        height: 12em;
         border-bottom: solid 1px;
+        margin-top: 5.6em;
     }
     &__direccion:hover > &__capa {
         opacity: 1;
@@ -85,13 +85,16 @@
         position: relative;
         overflow: hidden;
         padding-top: $spacing-small;
-        transition: .40s;
+        transition: .20s;
     }
     &__titulo {
         font-family: $font-principal; 
         font-size: $tex-base;  
         text-align: center;
         margin-bottom: $spacing-small;
+        border-bottom: solid 1px #2b2b2b;
+        height: 2.5em;
+        line-height: 1.87em;
     }
     &__info {
         font-family: $font-secondary;
@@ -106,7 +109,7 @@
         width: 10em;
         height: 5em;
         margin-left: $spacing-medium+1;
-        margin-top:$spacing-medium;
+        margin-top:$spacing-small;
     }
 }
 /*MEDIA QUERY 1377PX SUCURSALES*/
@@ -122,9 +125,12 @@
         background-image: url(../multimedia/img/banner_sucursales2.jpg); background-position: center; margin-right: 0%;
     }  
     .seccion_sucursales {
-        font-size: 13px;
+        flex-wrap: wrap;
         &__titulo {
             margin-bottom: $spacing-small;
+        }
+        &__img {
+            margin-top:$spacing-extra-small;
         }
     }
 }
@@ -139,9 +145,6 @@
         font-size: $tex-large;
         padding-top: $spacing-medium;
         }
-    }
-    .seccion_sucursales {
-        flex-wrap: wrap;
     }
 }
 /*MEDIA QUERY 660PX SUCURSALES*/
@@ -172,9 +175,12 @@
         font-size: 11px;
         &__iframe {
             width: 73vw;
+            height:14em ;
+            margin-top: 7.6em;
         }
         &__direccion {
             width: 73vw;
+            height: 29em;
             padding-right: $spacing-small;
         }
         &__titulo {
@@ -186,9 +192,9 @@
             font-size: $tex-base;
         }
         &__img {
-            margin-top: .8em;
-            width: 25vw;
-            height: 5vh;
+            margin-top: .6em;
+            width: 28vw;
+            height: 7vh;
             margin-left: 35%;
         }
     }
@@ -212,6 +218,16 @@
         font-size: 8px;
         &__titulo {
             margin-bottom: $spacing-extra-small;
+            width: 73vw;
+        }
+        &__img {
+            margin-top: 0;
+            width: 25vw;
+            height: 6vh;
+        }
+        &__iframe {
+            height:13em;
+            margin-top: 8.9em;
         }
     }
 }

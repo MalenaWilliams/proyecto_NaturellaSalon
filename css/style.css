@@ -504,8 +504,9 @@ hr {
     transition: 1s; }
   .seccion_sucursales__iframe {
     width: 20em;
-    height: 18em;
-    border-bottom: solid 1px; }
+    height: 12em;
+    border-bottom: solid 1px;
+    margin-top: 5.6em; }
   .seccion_sucursales__direccion:hover > .seccion_sucursales__capa {
     opacity: 1;
     visibility: visible;
@@ -523,12 +524,15 @@ hr {
     position: relative;
     overflow: hidden;
     padding-top: 2rem;
-    transition: .40s; }
+    transition: .20s; }
   .seccion_sucursales__titulo {
     font-family: "Quicksand", sans-serif;
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    border-bottom: solid 1px #2b2b2b;
+    height: 2.5em;
+    line-height: 1.87em; }
   .seccion_sucursales__info {
     font-family: "Manrope", sans-serif;
     font-size: 1.2em;
@@ -541,7 +545,7 @@ hr {
     width: 10em;
     height: 5em;
     margin-left: 5rem;
-    margin-top: 4rem; }
+    margin-top: 2rem; }
 
 /*MEDIA QUERY 1377PX SUCURSALES*/
 @media screen and (max-width: 1377px) {
@@ -556,9 +560,11 @@ hr {
     background-position: center;
     margin-right: 0%; }
   .seccion_sucursales {
-    font-size: 13px; }
+    flex-wrap: wrap; }
     .seccion_sucursales__titulo {
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+    .seccion_sucursales__img {
+      margin-top: 1.2rem; } }
 
 /*MEDIA QUERY 810PX SUCURSALES*/
 @media screen and (max-width: 810px) {
@@ -568,9 +574,7 @@ hr {
     margin-top: 2rem; }
     .sucursales__titulo_video {
       font-size: 1.2em;
-      padding-top: 4rem; }
-  .seccion_sucursales {
-    flex-wrap: wrap; } }
+      padding-top: 4rem; } }
 
 /*MEDIA QUERY 660PX SUCURSALES*/
 @media screen and (max-width: 660px) {
@@ -599,9 +603,12 @@ hr {
     margin-bottom: 4%;
     font-size: 11px; }
     .seccion_sucursales__iframe {
-      width: 73vw; }
+      width: 73vw;
+      height: 14em;
+      margin-top: 7.6em; }
     .seccion_sucursales__direccion {
       width: 73vw;
+      height: 29em;
       padding-right: 2rem; }
     .seccion_sucursales__titulo {
       font-size: 2em;
@@ -610,9 +617,9 @@ hr {
     .seccion_sucursales__info {
       font-size: 1.5em; }
     .seccion_sucursales__img {
-      margin-top: .8em;
-      width: 25vw;
-      height: 5vh;
+      margin-top: .6em;
+      width: 28vw;
+      height: 7vh;
       margin-left: 35%; } }
 
 @media screen and (max-width: 470px) {
@@ -629,7 +636,15 @@ hr {
   .seccion_sucursales {
     font-size: 8px; }
     .seccion_sucursales__titulo {
-      margin-bottom: 1.2rem; } }
+      margin-bottom: 1.2rem;
+      width: 73vw; }
+    .seccion_sucursales__img {
+      margin-top: 0;
+      width: 25vw;
+      height: 6vh; }
+    .seccion_sucursales__iframe {
+      height: 13em;
+      margin-top: 8.9em; } }
 
 /* SECCION SERVICIOS*/
 .servicios {
@@ -886,6 +901,7 @@ hr {
 
 .contacto__subtitulo {
   font-family: "Manrope", sans-serif;
+  font-weight: lighter;
   font-size: 2.5em;
   margin-left: 2rem;
   color: #2B2B2B; }
@@ -920,7 +936,8 @@ hr {
 .contacto__form_titulo {
   font-family: "Manrope", sans-serif;
   margin-bottom: 2rem;
-  text-align: center; }
+  text-align: center;
+  font-weight: lighter; }
 
 .contacto__form_imput, .contacto__form_imput--mensaje {
   margin-top: .6em;
