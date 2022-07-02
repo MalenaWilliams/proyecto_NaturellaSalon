@@ -1,95 +1,115 @@
 /* SECCION CONTACTO*/
 .contacto {
     background-image: url(../multimedia/img/fondo_contacto.jpg); background-size: cover; 
-}
-.contacto__banner {
-    background-image: url(../multimedia/img/banner_contacto.jpg); background-size: cover; background-position: center;
-    width: 98.95vw;
-    height: 18.75em;
-    @include flex (column,flex-start,flex-start,0);
-}
-.contacto__titulo {
-    font-weight: lighter;
-    color: map-get($colores, tex-color);
-    font-size: $tex-title;
-    margin-left: $spacing-small;
-    margin-top: $spacing-small;
-    font-family: $font-principal;
-}
-.contacto__subtitulo {
-    font-family: $font-secondary;
-    font-weight: lighter;
-    font-size:$tex-small;
-    margin-left: $spacing-small;
-    color: map-get($colores, tex-color);
-}
-.contacto__seccion {
-    @include flex (row,space-evenly,flex-start,$spacing-small);
-    margin-top: $spacing-large;
-}
-.contacto__articulos {
-    margin-bottom: $spacing-medium;
-    margin-top: $spacing-medium;
-}
-.contacto__form {
-    width: 40em;
-    min-height: 25em;
-    border-radius: 5%;
-    margin-bottom: $spacing-large;
-    background-color: map-get($colores, fondo);
-}
-.contacto__form-contenedor {
-    flex-direction: column;
-    margin-left: $spacing-small;
-    margin-right: $spacing-small;
-    margin-bottom: $spacing-medium;
-    padding: $spacing-small;
-    display: flex;
-}
-.contacto__form_titulo {
-    font-family: $font-secondary;
-    margin-bottom: $spacing-small;
-    text-align: center;
-    font-weight: lighter;
-}
-.contacto__form_imput {
-    margin-top: .6em;
-    border-radius: 2%;
-    outline: none;
-    border: none;
-    border: solid .3px map-get($colores, primary);
-    padding: 5px;
-    font-family: $font-secondary;
-    &--mensaje {
-        @extend .contacto__form_imput;
-        resize: none;
-        min-height: 4.5em;
+    &__banner {
+        background-image: url(../multimedia/img/banner_contacto.jpg); background-size: cover; background-position: center;
+        width: 98.95vw;
+        height: 18.75em;
+        margin-top: $spacing-extra-small;
+        @include flex (column,flex-start,flex-start,0);
     }
+    &__titulo {
+        font-weight: lighter;
+        color: map-get($colores, tex-color);
+        font-size: $tex-title;
+        margin-left: $spacing-small;
+        margin-top: $spacing-small;
+        font-family: $font-principal;
+    }
+    &__subtitulo {
+        font-family: $font-secondary;
+        font-weight: lighter;
+        font-size:$tex-small;
+        margin-left: $spacing-small;
+        color: map-get($colores, tex-color);
+    }
+    &__seccion {
+        @include flex (row,space-evenly,flex-start,$spacing-small);
+        margin-top: $spacing-large;
+    }
+    &__articulos {
+        margin-bottom: $spacing-medium;
+        margin-top: $spacing-medium;
+    }
+    &__form {
+        width: 40em;
+        min-height: 25em;
+        border-radius: 5%;
+        margin-bottom: $spacing-large;
+        background-color: map-get($colores, fondo);
+        &-contenedor {
+            flex-direction: column;
+            margin-left: $spacing-small;
+            margin-right: $spacing-small;
+            margin-bottom: $spacing-medium;
+            padding: $spacing-small;
+            display: flex;
+        }
+        &_titulo {
+            font-family: $font-secondary;
+            margin-bottom: $spacing-small;
+            text-align: center;
+            font-weight: lighter;
+        }
+        &_imput {
+            margin-top: .6em;
+            border-radius: 2%;
+            outline: none;
+            border: none;
+            border: solid .3px map-get($colores, primary);
+            padding: 5px;
+            font-family: $font-secondary;
+            &--mensaje {
+                @extend .contacto__form_imput;
+                resize: none;
+                min-height: 4.5em;
+            }
+        }
+        &_cta {
+            font-size: $tex-large;
+            margin-top: 0.625em;
+            border: none;
+            border: solid .3px map-get($colores, primary);
+            padding: 5px;
+            cursor: pointer;
+            font-family: $font-secondary;
+        }
+    }
+    &__mapa {
+        height: 25em;
+        border-radius: 5%;
+        width: 40em;
+    } 
 }
-.contacto__form_cta {
-    font-size: $tex-large;
-    margin-top: 0.625em;
-    border: none;
-    border: solid .3px map-get($colores, primary);
-    padding: 5px;
-    cursor: pointer;
-    font-family: $font-secondary;
-}
-.contacto__mapa {
-    height: 25em;
-    border-radius: 5%;
-    width: 40em;
-} 
 /*MEDIA QUERY 1377PX CONTACTO*/
-@media screen and (max-width: 1377px) {
-    .contacto__seccion {
-        @include flex (column-reverse,center,center,0);
+@media screen and (max-width: 1377px) { 
+    .contacto__form {
+        width: 34.5em;
     }
+    .contacto__mapa {
+        width: 34.5em;
+    } 
 }
 /*MEDIA QUERY 1040PX CONTACTO*/
 @media screen and (max-width: 1040px ) {
     .contacto__banner {
         font-size: 12px;
+    }
+    .contacto__seccion {
+        @include flex (column-reverse,center,center,0);
+    }
+    .contacto__form {
+        width: 40em;
+        margin-bottom: 0;
+        margin-top: $spacing-medium;
+    }
+    .contacto__articulos {
+        margin: 0;
+    }
+    .contacto__mapa {
+        width: 40em;
+        margin-bottom: $spacing-extra-large;
+        margin-top: $spacing-small;
     }
 }
 /*MEDIA QUERY 810PX CONTACTO*/
@@ -100,9 +120,8 @@
     .contacto__seccion {
         font-size: 12px;
     }
-    .contacto__articulos {
-        margin-top: $spacing-small;
-        margin-bottom: $spacing-small;
+    .contacto__mapa {
+        height: 29em;
     }
 }
 /*MEDIA QUERY 660PX CONTACTO*/
@@ -125,9 +144,9 @@
     }
     .contacto__form {
         font-size: 9.5px;
-    }
-    .contacto__form-contenedor {
-        padding-left: 0;
-        padding-right: 0;
+        &-contenedor {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }

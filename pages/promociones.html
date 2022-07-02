@@ -11,6 +11,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -50,7 +51,7 @@
             <h2 class="promociones__subtitulo">Líderes en el concepto del cuidado de tus uñas.</h2>
         </section>
         <section class="seccion_promociones">
-            <article class="seccion_promociones__opciones">
+            <article class="seccion_promociones__opciones" data-aos="fade-right" data-aos-duration="1000">
                 <h3 class="seccion_promociones__titulo">
                         10% Y 20% <br> LUNES A MIERCOLES
                 </h3>
@@ -60,14 +61,14 @@
                 </p>
             </article>
             <article>
-                    <img class="seccion_promociones__img" src="../multimedia/img/semii.jpg" alt="mano esmaltada color rosa con detalles en blanco">
+                    <img data-aos="fade-left" data-aos-duration="1000" class="seccion_promociones__img" src="../multimedia/img/semii.jpg" alt="mano esmaltada color rosa con detalles en blanco">
             </article>
         </section>
         <section class="seccion_promociones">
             <article>
-                    <img class="seccion_promociones__img" src="../multimedia/img/pedii.jpg" alt="manos y pies esmaltados con mismo diseño usando distintas tonalidades de celeste">
+                    <img data-aos="fade-right" data-aos-duration="1000" class="seccion_promociones__img" src="../multimedia/img/pedii.jpg" alt="manos y pies esmaltados con mismo diseño usando distintas tonalidades de celeste">
             </article>
-            <article class="seccion_promociones__opciones">
+            <article class="seccion_promociones__opciones" data-aos="fade-left" data-aos-duration="1000">
                 <h3 class="seccion_promociones__titulo">
                         20% COMBOS <br> JUEVES A SABADOS
                 </h3>
@@ -96,6 +97,10 @@
         </nav>
         <h3 class="footer__copirigth">© 2022 NaturellaSalon.</h3>  
       </footer>
-      <!--FIN DEL FOOTER DE LA PAGINA-->   
+      <!--FIN DEL FOOTER DE LA PAGINA-->  
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script> 
 </body>
 </html>

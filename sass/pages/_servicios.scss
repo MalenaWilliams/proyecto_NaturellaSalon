@@ -4,6 +4,7 @@
     &__banner {
     background-image: url(../multimedia/img/banner_servicios.jpg); background-size: cover;
     height: 18.75em;
+    margin-top: $spacing-extra-small;
     @include flex (column,flex-start,flex-start,0);
     }
     &__titulo {
@@ -35,13 +36,9 @@
         height: 30em;
         background-color: map-get($colores, base);
         margin-bottom: $spacing-medium;
-        border: solid 1px map-get($colores, primary);
         border-radius: 6%;
         padding-left: $spacing-extra-small /3;
         transition: all 0.40s;
-    }
-    &__opciones:hover {
-        transform: translateY(-20px);
         box-shadow: 0px 15px 25px map-get($colores, primary);
     }
     &__img {

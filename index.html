@@ -11,6 +11,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -94,7 +95,7 @@
         </section>
     <!--QUIENES SOMOS-->
         <section class="quienes_somos">
-            <article class="quienes_somos__contenedor">
+            <article class="quienes_somos__contenedor" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h2 class="quienes_somos__titulo">SOMOS</h2>
                 <img class="quienes_somos__img" src="./multimedia/img/logo2.jpg" alt="logo del salon Naturella">    
             </article>
@@ -135,5 +136,9 @@
       <h3 class="footer__copirigth">© 2022 NaturellaSalon.</h3>  
     </footer>
     <!--FIN DEL FOOTER DE LA PAGINA-->   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script> 
 </body>
 </html>

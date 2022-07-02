@@ -5,6 +5,7 @@
         background-image: url(../multimedia/img/banner_sucursales.jpg); background-position: center; margin-right: 0%;
         height: 18.75em;
         @include flex (column,flex-start,flex-start,0);
+        margin-top: $spacing-extra-small;
         margin-bottom: $spacing-large;
         opacity: .93;
     }

@@ -3,6 +3,7 @@
     background-image: url(../multimedia/img/banner_promociones.jpg);  background-size: cover; background-position: center;
     width: 98.95vw;
     height: 18.75em;
+    margin-top: $spacing-extra-small;
     @include flex (column,flex-start,flex-start,0)
 }
 .promociones__titulo {
@@ -40,7 +41,7 @@
         height: 20em;
         margin-top: $spacing-small;
         margin-bottom: $spacing-extra-small;
-        border: 5px solid map-get($colores, primary);
+        box-shadow: 0px 15px 25px map-get($colores, primary);
     }
     &__titulo {
         font-family: $font-principal;
@@ -65,7 +66,7 @@
     &__img {
         width: 25em;
         height: 20em;
-        border: 5px solid map-get($colores, primary);
+        box-shadow: 0px 15px 25px map-get($colores, primary);
         margin-top: $spacing-small;
     }
 }
@@ -102,7 +103,6 @@
     .promociones__parrafo_final {
         font-size: .85em;
     }
-    
     .seccion_promociones {
         flex-wrap: wrap;
         &__opciones {
@@ -110,11 +110,14 @@
             height: 22em;
             margin-bottom: 2px;
             margin-top: 0;
+            box-shadow: unset;
+            border: solid 1px map-get($colores, primary);
         }
         &__img {
             width: 30em;
             height: 22em;
             margin-top: 0;  
+            box-shadow: unset;
         }
     }
 }
