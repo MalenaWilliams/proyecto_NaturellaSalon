@@ -36,7 +36,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 0;
-  height: 10em; }
+  height: 10em;
+  /*ENLACES DE NAVEGACION*/ }
   .header__logo {
     display: flex;
     flex-direction: row;
@@ -68,16 +69,19 @@ ul {
   .header__enlaces_de_navegacion:hover {
     color: #ed6b5a59; }
 
+/*MEDIA QUERY 1377PX HEADER*/
 @media screen and (max-width: 1377px) {
   .header__enlaces_de_navegacion {
     font-size: 1.2em; }
   .header__logo {
     width: 25%; } }
 
+/*MEDIA QUERY 1040PX HEADER*/
 @media screen and (max-width: 1040px) {
   header {
     font-size: 13px; } }
 
+/*MEDIA QUERY 810PX HEADER*/
 @media screen and (max-width: 810px) {
   .header {
     height: 15em;
@@ -86,7 +90,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4%; }
+    gap: 4%;
+    /*MENU HAMBURGUESA*/ }
     .header__logo {
       height: 7vh;
       width: 32vw;
@@ -103,6 +108,7 @@ ul {
     .header__barra_de_navegacion {
       display: none; } }
 
+/*MEDIA QUERY 470PX HEADER*/
 @media screen and (max-width: 470px) {
   .header__barra_de_navegacion {
     margin-left: 0.4rem; }
@@ -129,10 +135,12 @@ ul {
     margin-top: 1.2rem;
     margin-right: 1%; }
 
+/*MEDIA QUERY 1040PX FOOTER*/
 @media screen and (max-width: 1040px) {
   footer {
     font-size: 13px; } }
 
+/*MEDIA QUERY 810PX FOOTER*/
 @media screen and (max-width: 810px) {
   .footer__imagenes_redes {
     height: 2.7em; } }
