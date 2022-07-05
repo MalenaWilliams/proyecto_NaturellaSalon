@@ -56,6 +56,7 @@ hr {
         grid-row: 2/5;
     }
 }
+/*IMAGENES DE SERVICIOS EN EL INDEX*/
 .imagenes_servicios {
     @include flex (row,center,flex-start,0);
     margin-top: $spacing-large;

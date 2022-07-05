@@ -1,7 +1,6 @@
-/* SECCION PROMOCIONES*/
+/* BANNER DE PROMOCIONES*/
 .promociones__banner {
     background-image: url(../multimedia/img/banner_promociones.jpg);  background-size: cover; background-position: center;
-    width: 98.95vw;
     height: 18.75em;
     margin-top: $spacing-extra-small;
     @include flex (column,flex-start,flex-start,0)
@@ -25,12 +24,7 @@
     -webkit-text-stroke-width: 0.18px;
     -webkit-text-stroke-color: map-get($colores, base);
 }
-.promociones__parrafo_final {
-    font-family: $font-secondary;
-    line-height: 1.5;
-    margin-bottom: $spacing-small;
-    text-align: center;
-}
+/* PROMOCIONES*/
 .seccion_promociones {
     @include flex (row,center,flex-start,0);
     margin-top: $spacing-large;
@@ -70,20 +64,25 @@
         margin-top: $spacing-small;
     }
 }
+.promociones__parrafo_final {
+    font-family: $font-secondary;
+    line-height: 1.5;
+    margin-bottom: $spacing-small;
+    text-align: center;
+}
 /*MEDIA QUERY 1040PX PROMOCIONES*/
 @media screen and (max-width: 1040px ) {
     .promociones__banner {
-        background-image: url(../multimedia/img/fondopr.jpg);
         font-size: 12px;
     }
     .seccion_promociones {
         font-size:13px ;
+        overflow: hidden;
     }
 }
 /*MEDIA QUERY 810PX PROMOCIONES*/
 @media screen and (max-width: 810px) {
     .promociones__banner {
-        background-image: url(../multimedia/img/fondopro.jpg); background-position: left;
         font-size: 10px;
     }
     .seccion_promociones {
@@ -96,7 +95,6 @@
 /*MEDIA QUERY 660PX PROMOCIONES*/
 @media screen and (max-width: 660px) {
     .promociones__banner {
-        background-image: url(../multimedia/img/fondopromo.jpg); background-size: unset;
         margin-top: $spacing-extra-small;
         font-size: 8px;
     }
@@ -124,7 +122,6 @@
 /*MEDIA QUERY 470PX PROMOCIONES*/
 @media screen and (max-width: 470px) {
     .promociones__banner {
-        background-image: url(../multimedia/img/fondpro.jpg); background-size: cover;
         font-size: 6.5px;
     }
 }

@@ -1,4 +1,4 @@
-/* SECCION CONTACTO*/
+/* BANNER DE CONTACTO*/
 .contacto {
     background-image: url(../multimedia/img/fondo_contacto.jpg); background-size: cover; 
     &__banner {
@@ -23,6 +23,7 @@
         margin-left: $spacing-small;
         color: map-get($colores, tex-color);
     }
+    /* FORMULARIO DE CONTACTO*/
     &__seccion {
         @include flex (row,space-evenly,flex-start,$spacing-small);
         margin-top: $spacing-large;
@@ -75,6 +76,7 @@
             font-family: $font-secondary;
         }
     }
+    /* MAPA*/
     &__mapa {
         height: 25em;
         border-radius: 5%;

@@ -9,11 +9,6 @@
     &__enlaces_redes {
         margin-inline-end: 1.25em;
     }
-
-    &__imagenes_redes {
-        border-radius: 50%;
-    }
-
     &__copirigth {
         color: map-get($colores, secondary);
         margin-top: $spacing-extra-small;
@@ -23,5 +18,10 @@
 @media screen and (max-width: 1040px ) {
     footer {
         font-size: 13px;
+    }
+}
+@media screen and (max-width: 810px ) {
+    .footer__imagenes_redes {
+        height: 2.7em;
     }
 }

@@ -1,6 +1,6 @@
-/* SECCION SERVICIOS*/
 .servicios {
-    background-image: url(../multimedia/img/im.jpg); background-size: cover;
+    background-image: url(../multimedia/img/fondo_servicios.jpg); background-size: cover;
+    /* BANNER SERVICIOS*/
     &__banner {
     background-image: url(../multimedia/img/banner_servicios.jpg); background-size: cover;
     height: 18.75em;
@@ -27,6 +27,7 @@
         font-weight: lighter;
     }
 } 
+/* TARJETAS DE SERVICIOS*/
 .seccion_servicios {
     @include flex (row,space-evenly,flex-start,0);
     margin-top: $spacing-large;
