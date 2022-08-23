@@ -87,12 +87,7 @@
         </article>
         <!-- FORMULARIO DE CONTACTO-->
         <article class="contacto__articulos">
-          <form
-            class="contacto__form"
-            action="mailto:malenanwilliams@gmail.com"
-            method="get"
-            enctype="text/plain"
-          >
+          <form action="https://formsubmit.co/manickww@gmail.com" method="POST">
             <div class="contacto__form-contenedor">
               <h2 class="contacto__form_titulo">
                 Dejanos tu Mensaje o Consulta
@@ -127,6 +122,14 @@
               ></textarea>
 
               <input class="contacto__form_cta" type="submit" value="Enviar" />
+
+              <input
+                type="hidden"
+                name="_next"
+                value="naturellasalon.netlify.app"
+              />
+
+              <input type="hidden" name="_captcha" value="false" />
             </div>
           </form>
         </article>
